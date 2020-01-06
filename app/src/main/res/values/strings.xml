@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="sources_not_found">Kaynaklar bulunamadi</string>
+    <string name="news_not_found">Haberler bulunamadi</string>
+    <string name="please_wait">Lütfen bekleyiniz</string>
+    <string name="search">Ara</string>
+    <string name="add_read_list">Okuma Listeme Ekle</string>
+    <string name="remove_read_list">Okuma Listemden Çıkar</string>
+    <string name="new_news_added">Yeni Haberler Eklendi</string>
+</resources>

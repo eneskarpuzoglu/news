@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="item"
+                type="com.kar.enes.app.data.model.SourceModel" />
+        <variable
+                name="viewModel"
+                type="com.kar.enes.app.ui.sources.SourcesViewModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardUseCompatPadding="true"
+            android:background="#f5f5f5"
+            android:onClick="@{()-> viewModel.clickSource(item)}"
+            android:layout_marginBottom="8dp"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="3dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="22sp"
+                    android:text="@{item.name}"
+                    android:maxLines="1"
+                    android:layout_marginBottom="8dp"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@{item.description}"
+                    />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
